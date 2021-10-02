@@ -1,15 +1,21 @@
+// sass-lint:disable no-vendor-prefixes
+
 * {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: $font-main;
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: $font-main;
+  font-size: $font-size-16;
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: $font-main;
+  color: $primary;
 }
 
 h1 {
@@ -28,11 +34,11 @@ select,
 textarea {
   background-color: transparent;
   border: 0;
-}
 
-&focus {
-  outline: none;
-  box-shadow: none;
+  &:focus {
+    outline: nones;
+    box-shadow: none;
+  }
 }
 
 button {
